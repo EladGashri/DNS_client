@@ -4,8 +4,10 @@ DNS queries are constructed according to RFC 1035.
 The program is written in C.
 
 In order to build and run the program write these 2 following lines in the shell:
+
 1.make
-2. ./nsclient <DNS server IP address>
+
+2. ./DNS_client <DNS server IP address>
 
 There are 2 important data structures in the code:
 DNS_header_question - contains the header and the question sections fields of the DNS message.
