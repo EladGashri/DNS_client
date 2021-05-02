@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
     hostent_response->h_addrtype=AF_INET;
 
     unsigned char command[MAX_COMMAND_LENGTH];
-    struct hostent* hostent_from_dnsQuery;
+    struct hostent* hostent_from_dns_query;
 
     char *ip_address;
 
@@ -45,9 +45,9 @@ int main(int argc, char *argv[]){
         if (strcmp(command, "quit") == 0) {
             break;
         } else if (check_domain_name(command)) {
-            hostent_from_dnsQuery = dnsQuery(command);
-            if (hostent_from_dnsQuery!=NULL){
-                ip_address=hostent_from_dnsQuery->h_name;
+            hostent_from_dns_query = dns_query(command);
+            if (hostent_from_dns_query!=NULL){
+                ip_address=hostent_from_dns_query->h_name;
                 printf("%s\n", inet_ntoa(*(struct in_addr*)ip_address));
             }
         }else{
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]){
 }
 
 
-struct hostent* dnsQuery(unsigned char* domain_name){
+struct hostent* dns_query(unsigned char* domain_name){
 
     unsigned char temp_formatted_domain_name[MAX_COMMAND_LENGTH];
     set_formatted_domain_name(temp_formatted_domain_name, domain_name);
