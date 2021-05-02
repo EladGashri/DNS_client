@@ -52,7 +52,7 @@ typedef struct {
 #pragma pack(pop)
 
 bool check_domain_name(unsigned char* domain_name);
-struct hostent* dnsQuery(unsigned char* domain_name);
+struct hostent* dns_query(unsigned char* domain_name);
 void initialize_message(DNS_header_question *message);
 void set_formatted_domain_name(unsigned char* formatted_domain_name, unsigned char* domain_name);
 
