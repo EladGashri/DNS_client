@@ -1,5 +1,5 @@
-#ifndef NSCLIENT_H
-#define NSCLIENT_H
+#ifndef DNSCLIENT_H
+#define DNSCLIENT_H
 
 #include <stdio.h>
 #include <stdlib.h>
