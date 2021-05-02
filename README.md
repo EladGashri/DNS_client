@@ -3,7 +3,9 @@ It prompts the user to enter a domain name. If the domain name exists in the DNS
 DNS queries are constructed according to RFC 1035.
 
 In order to build and run the program write these 2 following lines in the shell:
+
 make
+
 ./nsclient <DNS server IP address>
 
 There are 2 important data structures in the code:
