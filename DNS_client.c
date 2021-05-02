@@ -1,4 +1,4 @@
-#include "nsclient.h"
+#include "DNS_client.h"
 
 
 int main(int argc, char *argv[]){
@@ -40,7 +40,7 @@ int main(int argc, char *argv[]){
     char *ip_address;
 
     while (true) {
-        printf("nsclient>");
+        printf("please enter a domain name>");
         scanf("%s", command);
         if (strcmp(command, "quit") == 0) {
             break;
