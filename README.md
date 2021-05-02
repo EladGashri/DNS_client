@@ -1,4 +1,4 @@
-The program contacts a DNS server using UDP protocol.  the Program receives as a command line argument an IP address of a DNS server in a dotted-decimal notation. 
+The program contacts a DNS server using UDP protocol. The Program receives as a command line argument an IP address of a DNS server in a dotted-decimal notation. 
 It prompts the user to enter a domain name. If the domain name exists in the DNS server, it's IP is printed in a dotted-decimal notation.
 DNS queries are constructed according to RFC 1035.
 
