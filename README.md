@@ -9,7 +9,6 @@ make
 
 ./DNS_client <DNS server IP address>
 
-
 There are 2 important data structures in the code:
 DNS_header_question - contains the header and the question sections fields of the DNS message.
 DNS_answer - contains the answer section fields of the DNS message.
